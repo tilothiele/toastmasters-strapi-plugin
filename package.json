@@ -1,28 +1,31 @@
 {
-  "name": "strapi-plugin-toastmasters-strapi-plugin",
+  "name": "toastmasters-strapi-plugin",
   "version": "0.0.0",
   "description": "This is the description of the plugin.",
   "strapi": {
     "name": "toastmasters-strapi-plugin",
-    "icon": "plug",
-    "description": "Description of toastmasters-strapi-plugin plugin."
+    "description": "Description of toastmasters-strapi-plugin plugin",
+    "kind": "plugin"
   },
   "dependencies": {},
+  "devDependencies": {
+    "typescript": "4.6.3"
+  },
   "author": {
-    "name": "A Strapi developer",
-    "email": "",
-    "url": ""
+    "name": "A Strapi developer"
   },
   "maintainers": [
     {
-      "name": "A Strapi developer",
-      "email": "",
-      "url": ""
+      "name": "A Strapi developer"
     }
   ],
   "engines": {
-    "node": ">=10.16.0 <=14.x.x",
+    "node": ">=14.19.1 <=18.x.x",
     "npm": ">=6.0.0"
+  },
+  "scripts": {
+    "develop": "tsc -w",
+    "build": "tsc"
   },
   "license": "MIT"
 }
